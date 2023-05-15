@@ -17,17 +17,17 @@ public class BankController {
 	@Autowired
 	BankAccountService bankAccountService;
 	
-	@PostMapping(value = "/account")
+	@PostMapping("/account")
 	public int createAccount(@RequestBody BankAccount ba) {
 		return bankAccountService.createAccount(ba).getAccountNumber();
 	}
 	
-	@PutMapping(value = "/account")
+	@PutMapping("/account")
 	public int updateAccount(@RequestBody BankAccount ba) {
 		return bankAccountService.updateAccount(ba).getAccountNumber();
 	}
 	
-	@GetMapping(value = "/balance")
+	@GetMapping("/balance")
 	public double checkBalance(@RequestParam int accountNumber) {
 		return bankAccountService.getBalance(accountNumber);
 	}

@@ -1,6 +1,6 @@
 spring:
   application:
-    name: bankService
+    name: transactionService
 eureka:
   client:
     register-with-eureka: true
@@ -11,4 +11,4 @@ instance:
   hostname: localhost
 
 server:
-  port: 8930
+  port: 8931

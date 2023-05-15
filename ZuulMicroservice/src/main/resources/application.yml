@@ -11,7 +11,7 @@ instance:
   hostname: localhost
   
 server:
-  port: 8989
+  port: 8932
   
 zuul:
   prefix: /demo
